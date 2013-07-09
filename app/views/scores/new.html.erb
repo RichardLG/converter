@@ -1,0 +1,25 @@
+<h1>Input Scores</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+<%= form_for @score do |f| %>
+<p>
+  <%= f.label :reading, "Reading:" %>
+  <%= f.text_field :reading %>
+</p>
+<p>
+  <%= f.label :math, "Math:" %>
+  <%= f.text_field :math %>
+</p>
+<p>
+  <%= f.label :essay, "Essay:" %>
+  <%= f.text_field :essay %>
+</p>
+<p>
+  <%= f.label :mc, "MC:" %>
+  <%= f.text_field :mc %>
+</p>
+  <%= f.submit "Calculate scores", class: "btn btn-large btn-primary" %>
+<% end %>
+ </div>
+</div>

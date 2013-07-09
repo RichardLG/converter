@@ -11,13 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130708200742) do
+ActiveRecord::Schema.define(:version => 20130709060649) do
 
   create_table "scores", :force => true do |t|
-    t.string   "score0"
-    t.string   "score1"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "reading"
+    t.integer  "math"
+    t.integer  "writing"
+    t.integer  "mc"
+    t.integer  "essay"
   end
 
 end
