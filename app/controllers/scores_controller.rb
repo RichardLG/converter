@@ -14,7 +14,10 @@ class ScoresController < ApplicationController
 
   def create
     @score = Score.new(params[:score])
-    @score.save
-    redirect_to scores_url
+    if @score.save
+      redirect_to scores_url
+    else
+      render 'new'
+    end
   end
 end

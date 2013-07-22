@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20130709060649) do
   create_table "scores", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "reading"
+    t.integer  "reading"
     t.integer  "math"
     t.integer  "writing"
     t.integer  "mc"
